@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '/app/data/repository/github_repository.dart';
-import '/app/data/repository/github_repository_impl.dart';
+import '/app/data/repository/github/github_repository.dart';
+import '/app/data/repository/github/github_repository_impl.dart';
 
 class RepositoryBindings implements Bindings {
   @override

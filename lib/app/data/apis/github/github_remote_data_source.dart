@@ -1,4 +1,4 @@
-import '/app/core/model/github_search_query_param.dart';
+import '../../../core/models/github/github_search_query_param.dart';
 import '/app/data/model/github_project_search_response.dart';
 import '/app/data/model/item.dart';
 

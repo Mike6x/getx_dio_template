@@ -1,10 +1,11 @@
 import 'package:dio/dio.dart';
 
+import '../api_routes.dart';
 import '/app/core/base/base_remote_source.dart';
-import '/app/core/model/github_search_query_param.dart';
+import '../../../core/models/github/github_search_query_param.dart';
 import '/app/data/model/github_project_search_response.dart';
 import '/app/data/model/item.dart';
-import '/app/data/remote/github_remote_data_source.dart';
+import '/app/data/apis/github/github_remote_data_source.dart';
 import '/app/network/dio_provider.dart';
 
 class GithubRemoteDataSourceImpl extends BaseRemoteSource
@@ -12,7 +13,8 @@ class GithubRemoteDataSourceImpl extends BaseRemoteSource
   @override
   Future<GithubProjectSearchResponse> searchGithubProject(
       GithubSearchQueryParam queryParam) {
-    var endpoint = "${DioProvider.baseUrl}/search/repositories";
+    var endpoint = "${DioProvider.baseUrl}${ApiRoutes.github_search}";
+    //var endpoint = "${DioProvider.baseUrl}/search/repositories";
     var dioCall = dioClient.get(endpoint, queryParameters: queryParam.toJson());
 
     try {
