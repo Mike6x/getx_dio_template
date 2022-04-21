@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../../../core/models/models_index.dart';
+import '../../../core/configs/search_query_param.dart';
 import '../../models/posts/post_search_response.dart';
 import '../api_routes.dart';
 import '/app/core/base/base_remote_source.dart';

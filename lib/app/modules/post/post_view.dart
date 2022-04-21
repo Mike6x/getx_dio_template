@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../core/values/app_values.dart';
-import '../../core/widget/paging_view.dart';
+import '../../core/widgets/paging_view.dart';
 import '/app/core/base/base_view.dart';
-import '/app/core/widget/custom_app_bar.dart';
+import '/app/core/widgets/custom_app_bar.dart';
 import 'post_controller.dart';
 import 'widget/item_post.dart';
 

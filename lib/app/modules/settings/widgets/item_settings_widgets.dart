@@ -3,8 +3,8 @@ import '/app/core/base/base_widget_mixin.dart';
 import '/app/core/values/app_colors.dart';
 import '/app/core/values/app_values.dart';
 import '/app/core/values/text_styles.dart';
-import '/app/core/widget/asset_image_view.dart';
-import '/app/core/widget/ripple.dart';
+import '/app/core/widgets/asset_image_view.dart';
+import '/app/core/widgets/ripple.dart';
 
 class ItemSettings extends StatelessWidget with BaseWidgetMixin {
   final String prefixImage;

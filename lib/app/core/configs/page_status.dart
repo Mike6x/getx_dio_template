@@ -1,4 +1,4 @@
-import '/app/core/models/page_state.dart';
+import 'configs_index.dart';
 
 class PageStatus {
   final bool isSuccess;

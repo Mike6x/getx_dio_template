@@ -3,11 +3,11 @@ class ApiRoutes {
 
   // baseUrl https://reqres.in endpoints
 
-  static const String login = '/login';
-  static const String register = '/register';
-  static const String logout = '/logout';
-  static const String forgotPassword = '/forgot-password';
-  static const String resetPassword = '/reset-password';
+  static const String login = '/api/login';
+  static const String register = '/api/register';
+  static const String logout = '/api/logout';
+  static const String forgotPassword = '/api/forgot-password';
+  static const String resetPassword = '/api/reset-password';
 
   // github Url & endpoints for testing
   static const String typicodeUrl = "http://jsonplaceholder.typicode.com";

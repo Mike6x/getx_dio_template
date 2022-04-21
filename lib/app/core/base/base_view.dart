@@ -5,10 +5,11 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 
+import '../configs/configs_index.dart';
 import '/app/core/base/base_controller.dart';
-import '/app/core/models/page_state.dart';
+
 import '/app/core/values/app_colors.dart';
-import '/app/core/widget/loading.dart';
+import '/app/core/widgets/loading.dart';
 import '/flavors/build_config.dart';
 
 abstract class BaseView<Controller extends BaseController>

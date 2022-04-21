@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 
-import '../../../core/models/models_index.dart';
+import '../../../core/configs/configs_index.dart';
 import '/app/data/models/github/github_project_search_response.dart';
 import '../../models/github/github_item.dart';
 import '/app/data/apis/github/github_remote_data_source.dart';

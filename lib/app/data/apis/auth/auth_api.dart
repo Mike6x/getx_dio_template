@@ -1,4 +1,6 @@
-import '../../../core/models/auth/auth_models_index.dart';
+
+
+import '../../models/auth/auth_models_index.dart';
 
 abstract class AuthApi {
   Future<LoginResponseModel> loginRequest(

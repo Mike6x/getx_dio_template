@@ -1,4 +1,4 @@
-import '../../../core/models/models_index.dart';
+import '../../../core/configs/search_query_param.dart';
 import '../../models/posts/post_search_response.dart';
 
 abstract class PostApi {

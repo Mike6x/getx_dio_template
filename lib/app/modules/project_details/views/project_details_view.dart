@@ -5,8 +5,8 @@ import '/app/core/base/base_view.dart';
 import '/app/core/values/app_colors.dart';
 import '/app/core/values/app_values.dart';
 import '/app/core/values/text_styles.dart';
-import '/app/core/widget/custom_app_bar.dart';
-import '/app/core/widget/icon_text_widgets.dart';
+import '/app/core/widgets/custom_app_bar.dart';
+import '/app/core/widgets/icon_text_widgets.dart';
 import '/app/modules/project_details/controllers/project_details_controller.dart';
 
 class ProjectDetailsView extends BaseView<ProjectDetailsController> {

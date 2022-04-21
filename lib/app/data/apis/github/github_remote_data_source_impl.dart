@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
-
+import '../../../core/configs/search_query_param.dart';
 import '../api_routes.dart';
 import '/app/core/base/base_remote_source.dart';
-import '../../../core/models/search_query_param.dart';
+
 import '/app/data/models/github/github_project_search_response.dart';
 import '../../models/github/github_item.dart';
 import '/app/data/apis/github/github_remote_data_source.dart';

@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 
 import '../../core/base/paging_controller.dart';
 
-import '../../core/models/models_index.dart';
+import '../../core/configs/configs_index.dart';
 
 import '../../data/models/posts/post_search_response.dart';
 import '../../data/repository/posts/post_repository.dart';
