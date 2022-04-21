@@ -1,5 +1,6 @@
 abstract class AppValues {
   static const double padding = 16;
+  // ignore: constant_identifier_names
   static const double padding_zero = 0;
   static const double halfPadding = 8;
   static const double smallPadding = 10;
@@ -12,6 +13,7 @@ abstract class AppValues {
   static const double buttonVerticalPadding = 12;
 
   static const double margin = 16;
+  // ignore: constant_identifier_names
   static const double margin_zero = 0;
   static const double smallMargin = 8;
   static const double extraSmallMargin = 6;
@@ -31,6 +33,7 @@ abstract class AppValues {
   static const double extraLargeSpacing = 96;
 
   static const double radius = 16;
+  // ignore: constant_identifier_names
   static const double radius_zero = 0;
   static const double smallRadius = 8;
   static const double radius_6 = 6;

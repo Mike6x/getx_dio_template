@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '/app/core/values/app_colors.dart';
 import '/app/core/values/app_values.dart';
-import '/app/core/widgets/elevated_container.dart';
+import '/app/core/widgets/widgets_index.dart';
 
 class Loading extends StatelessWidget {
   const Loading({Key? key}) : super(key: key);

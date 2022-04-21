@@ -1,18 +1,18 @@
-import 'package:flutter_getx_template/app/modules/post/post_index.dart';
+import 'package:flutter_getx_template/app/modules/root/post/post_index.dart';
 import 'package:get/get.dart';
 
-import '/app/modules/favorite/bindings/favorite_binding.dart';
-import '/app/modules/favorite/views/favorite_view.dart';
-import '/app/modules/home/bindings/home_binding.dart';
-import '/app/modules/home/views/home_view.dart';
-import '/app/modules/main/bindings/main_binding.dart';
-import '/app/modules/main/views/main_view.dart';
-import '/app/modules/other/bindings/other_binding.dart';
-import '/app/modules/other/views/other_view.dart';
-import '/app/modules/project_details/bindings/project_details_binding.dart';
-import '/app/modules/project_details/views/project_details_view.dart';
-import '/app/modules/settings/bindings/settings_binding.dart';
-import '/app/modules/settings/views/settings_view.dart';
+import '../modules/root/favorite/favorite_binding.dart';
+import '../modules/root/favorite/favorite_view.dart';
+import '../modules/root/home/home_binding.dart';
+import '../modules/root/home/home_view.dart';
+import '/app/modules/root/main/bindings/main_binding.dart';
+import '/app/modules/root/main/views/main_view.dart';
+import '../modules/root/other/other_binding.dart';
+import '../modules/root/other/other_view.dart';
+import '/app/modules/root/project_details/bindings/project_details_binding.dart';
+import '/app/modules/root/project_details/views/project_details_view.dart';
+import '../modules/root/settings/settings_binding.dart';
+import '../modules/root/settings/settings_view.dart';
 
 part 'app_routes.dart';
 

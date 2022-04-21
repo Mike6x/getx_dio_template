@@ -8,7 +8,8 @@ import '../api_routes.dart';
 import '/app/core/base/base_remote_source.dart';
 
 import '/app/network/dio_provider.dart';
-import 'auth_index.dart';
+import 'auth_api.dart';
+
 
 class AuthApiImpl extends BaseRemoteSource implements AuthApi {
   @override
@@ -52,12 +53,14 @@ class AuthApiImpl extends BaseRemoteSource implements AuthApi {
 
   @override
   Future forgotPasswordRequest({required String email}) {
+    // ignore: todo
     // TODO: implement forgotPasswordRequest
     throw UnimplementedError();
   }
 
   @override
   Future logoutRequest() {
+    // ignore: todo
     // TODO: implement logoutRequest
     throw UnimplementedError();
   }
@@ -65,6 +68,7 @@ class AuthApiImpl extends BaseRemoteSource implements AuthApi {
   @override
   Future<RegisterResponseModel> registerRequest(
       {required String email, required String password}) {
+    // ignore: todo
     // TODO: implement registerRequest
     throw UnimplementedError();
   }
@@ -72,6 +76,7 @@ class AuthApiImpl extends BaseRemoteSource implements AuthApi {
   @override
   Future resetPasswordRequest(
       {required String oldPassword, required String newPassword}) {
+        // ignore: todo
     // TODO: implement resetPasswordRequest
     throw UnimplementedError();
   }

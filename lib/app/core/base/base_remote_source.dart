@@ -18,9 +18,11 @@ abstract class BaseRemoteSource {
       // if (response.statusCode != HttpStatus.ok ||
       //     (response.data as Map<String, dynamic>)['statusCode'] !=
       //         HttpStatus.ok) {
+        // ignore: todo
       //   // TODO
       // }
       if (response.statusCode != HttpStatus.ok ) {
+        // ignore: todo
         // TODO
       }
 
