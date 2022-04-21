@@ -8,7 +8,8 @@ import '/flavors/environment.dart';
 void main() {
   EnvConfig prodConfig = EnvConfig(
     appName: "Flutter GetX Template Prod",
-    baseUrl: "https://api.github.com",
+    baseUrl: "https://reqres.in",
+    //baseUrl: "https://api.github.com",
     shouldCollectCrashLog: true,
   );
 

@@ -8,7 +8,8 @@ import '/flavors/environment.dart';
 void main() {
   EnvConfig devConfig = EnvConfig(
     appName: "Flutter GetX Template Dev",
-    baseUrl: "https://api.github.com",
+    baseUrl: "https://reqres.in",
+    //baseUrl: "https://api.github.com",
     shouldCollectCrashLog: true,
   );
 

@@ -74,6 +74,10 @@ class BottomNavBar extends StatelessWidget {
           iconSvgName: "ic_favorite.svg",
           menuCode: MenuCode.FAVORITE),
       BottomNavItem(
+          navTitle: appLocalization.bottomNavPost,
+          iconSvgName: "ic_fork.svg",
+          menuCode: MenuCode.POST),
+      BottomNavItem(
           navTitle: appLocalization.bottomNavSettings,
           iconSvgName: "ic_settings.svg",
           menuCode: MenuCode.SETTINGS)

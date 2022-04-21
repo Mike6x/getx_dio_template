@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
+import '../../post/post_controller.dart';
 import '/app/modules/favorite/controllers/favorite_controller.dart';
 import '/app/modules/home/controllers/home_controller.dart';
 import '/app/modules/main/controllers/main_controller.dart';
@@ -23,6 +24,9 @@ class MainBinding extends Bindings {
     );
     Get.lazyPut<FavoriteController>(
       () => FavoriteController(),
+    );
+    Get.lazyPut<PostController>(
+      () => PostController(),
     );
     Get.lazyPut<SettingsController>(
       () => SettingsController(),

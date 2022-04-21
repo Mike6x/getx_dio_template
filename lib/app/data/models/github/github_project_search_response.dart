@@ -1,6 +1,11 @@
-import '/app/data/model/item.dart';
+import 'github_item.dart';
 
 class GithubProjectSearchResponse {
+  
+  int? totalCount;
+  bool? incompleteResults;
+  List<GithubItem>? items;
+
   GithubProjectSearchResponse({
     this.totalCount,
     this.incompleteResults,
@@ -13,14 +18,10 @@ class GithubProjectSearchResponse {
     if (json['items'] != null) {
       items = [];
       json['items'].forEach((v) {
-        items?.add(Item.fromJson(v));
+        items?.add(GithubItem.fromJson(v));
       });
     }
   }
-
-  int? totalCount;
-  bool? incompleteResults;
-  List<Item>? items;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};

@@ -1,3 +1,4 @@
+import 'package:flutter_getx_template/app/modules/post/post_index.dart';
 import 'package:get/get.dart';
 
 import '/app/modules/favorite/bindings/favorite_binding.dart';
@@ -35,6 +36,11 @@ class AppPages {
       name: _Paths.FAVORITE,
       page: () => FavoriteView(),
       binding: FavoriteBinding(),
+    ),
+    GetPage(
+      name: _Paths.POST,
+      page: () => PostView(),
+      binding: PostBinding(),
     ),
     GetPage(
       name: _Paths.SETTINGS,

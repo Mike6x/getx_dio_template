@@ -8,6 +8,8 @@ import '/flavors/build_config.dart';
 class DioProvider {
   static final String baseUrl = BuildConfig.instance.config.baseUrl;
 
+ 
+
   static Dio? _instance;
 
   static const int _maxLineWidth = 90;

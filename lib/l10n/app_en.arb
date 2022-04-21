@@ -1,6 +1,7 @@
 {
   "bottomNavHome": "Home",
   "bottomNavFavorite": "Favorite",
+  "bottomNavPost": "POST",
   "bottomNavSettings": "Settings",
   "titleOtherView": "OtherView",
   "settingsTheme": "Theme",

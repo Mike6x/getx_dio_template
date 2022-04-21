@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_template/app/modules/post/post_index.dart';
 import 'package:get/get.dart';
 
 import '/app/core/base/base_view.dart';
@@ -28,12 +29,12 @@ class MainView extends BaseView<MainController> {
 
   @override
   Widget? bottomNavigationBar() {
-
     return BottomNavBar(onNewMenuSelected: controller.onMenuSelected);
   }
 
   final HomeView homeView = HomeView();
   FavoriteView? favoriteView;
+  PostView? postView;
   SettingsView? settingsView;
 
   Widget getPageOnSelectedMenu(MenuCode menuCode) {
@@ -43,6 +44,9 @@ class MainView extends BaseView<MainController> {
       case MenuCode.FAVORITE:
         favoriteView ??= FavoriteView();
         return favoriteView!;
+      case MenuCode.POST:
+        postView ??= PostView();
+        return postView!;
       case MenuCode.SETTINGS:
         settingsView ??= SettingsView();
         return settingsView!;

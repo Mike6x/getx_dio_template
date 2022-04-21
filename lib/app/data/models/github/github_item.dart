@@ -1,6 +1,6 @@
-import '/app/data/model/owner.dart';
+import '/app/data/models/github/owner.dart';
 
-class Item {
+class GithubItem {
   int? id;
   String? name;
   Owner? owner;
@@ -10,7 +10,7 @@ class Item {
   double? score;
   String? description;
 
-  Item({
+  GithubItem({
     this.id,
     this.name,
     this.owner,
@@ -21,7 +21,7 @@ class Item {
     this.score,
   });
 
-  Item.fromJson(dynamic json) {
+  GithubItem.fromJson(dynamic json) {
     id = json['id'];
     name = json['name'];
     owner = json['owner'] != null ? Owner.fromJson(json['owner']) : null;

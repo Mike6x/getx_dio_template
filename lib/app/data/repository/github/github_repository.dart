@@ -1,10 +1,11 @@
-import '../../../core/models/github/github_search_query_param.dart';
-import '/app/data/model/github_project_search_response.dart';
-import '/app/data/model/item.dart';
+
+import '../../../core/models/models_index.dart';
+import '/app/data/models/github/github_project_search_response.dart';
+import '../../models/github/github_item.dart';
 
 abstract class GithubRepository {
   Future<GithubProjectSearchResponse> searchProject(
-      GithubSearchQueryParam queryParam);
+      SearchQueryParam queryParam);
 
-  Future<Item> getProject(String userName, String repositoryName);
+  Future<GithubItem> getProject(String userName, String repositoryName);
 }
