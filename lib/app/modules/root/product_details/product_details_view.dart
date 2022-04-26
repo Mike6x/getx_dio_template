@@ -7,9 +7,9 @@ import '/app/core/values/app_values.dart';
 import '/app/core/values/text_styles.dart';
 
 import '/app/core/widgets/widgets_index.dart';
-import '/app/modules/root/project_details/controllers/project_details_controller.dart';
+import 'product_details_controller.dart';
 
-class ProjectDetailsView extends BaseView<ProjectDetailsController> {
+class ProductDetailsView extends BaseView<productDetailsController> {
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
     return CustomAppBar(
@@ -28,7 +28,7 @@ class ProjectDetailsView extends BaseView<ProjectDetailsController> {
   }
 
   Widget _getView() {
-    return controller.projectUiData.repositoryName.isEmpty
+    return controller.productUiData.repositoryName.isEmpty
         ? Container()
         : Container(
             margin: const EdgeInsets.all(AppValues.margin_20),
@@ -36,7 +36,7 @@ class ProjectDetailsView extends BaseView<ProjectDetailsController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  controller.projectUiData.repositoryName,
+                  controller.productUiData.repositoryName,
                   style: cardTitleStyle,
                   overflow: TextOverflow.ellipsis,
                   maxLines: 1,
@@ -55,12 +55,12 @@ class ProjectDetailsView extends BaseView<ProjectDetailsController> {
     return Row(
       children: [
         CircleAvatar(
-          backgroundImage: NetworkImage(controller.projectUiData.ownerAvatar),
+          backgroundImage: NetworkImage(controller.productUiData.ownerAvatar),
           radius: AppValues.iconSmallSize,
         ),
         const SizedBox(width: AppValues.margin_6),
         Text(
-          controller.projectUiData.ownerLoginName,
+          controller.productUiData.ownerLoginName,
           style: cardSubtitleStyle,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
@@ -76,20 +76,20 @@ class ProjectDetailsView extends BaseView<ProjectDetailsController> {
         children: [
           IconTextWidget(
             fileName: "ic_fork.svg",
-            value: controller.projectUiData.numberOfFork.toString(),
+            value: controller.productUiData.numberOfFork.toString(),
             height: AppValues.iconSize_20,
             width: AppValues.iconSize_20,
             color: AppColors.iconColorDefault,
           ),
           IconTextWidget(
             icon: Icons.star_border,
-            value: controller.projectUiData.numberOfStar.toString(),
+            value: controller.productUiData.numberOfStar.toString(),
             size: AppValues.iconSize_20,
             color: AppColors.iconColorDefault,
           ),
           IconTextWidget(
             icon: Icons.visibility_outlined,
-            value: controller.projectUiData.watchers.toString(),
+            value: controller.productUiData.watchers.toString(),
             size: AppValues.iconSize_20,
             color: AppColors.iconColorDefault,
           ),
@@ -102,7 +102,7 @@ class ProjectDetailsView extends BaseView<ProjectDetailsController> {
     return Expanded(
       child: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: Text(controller.projectUiData.description,
+        child: Text(controller.productUiData.description,
             style: descriptionTextStyle),
       ),
     );

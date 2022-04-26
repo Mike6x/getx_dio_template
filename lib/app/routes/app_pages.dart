@@ -13,11 +13,10 @@ import '../modules/root/favorite/favorite_binding.dart';
 import '../modules/root/favorite/favorite_view.dart';
 import '../modules/root/home/home_binding.dart';
 import '../modules/root/home/home_view.dart';
+import '../modules/root/product_details/product_details_index.dart';
 import '../modules/root/root_index.dart';
 import '../modules/root/other/other_binding.dart';
 import '../modules/root/other/other_view.dart';
-import '/app/modules/root/project_details/bindings/project_details_binding.dart';
-import '/app/modules/root/project_details/views/project_details_view.dart';
 import '../modules/root/settings/settings_binding.dart';
 import '../modules/root/settings/settings_view.dart';
 import 'app_routes.dart';
@@ -87,9 +86,9 @@ class AppPages {
       binding: OtherBinding(),
     ),
     GetPage(
-      name: AppRoutes.PROJECT_DETAILS,
-      page: () => ProjectDetailsView(),
-      binding: ProjectDetailsBinding(),
+      name: AppRoutes.PRODUCT_DETAILS,
+      page: () => ProductDetailsView(),
+      binding: ProductDetailsBinding(),
     ),
   ];
 }

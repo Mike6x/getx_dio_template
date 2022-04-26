@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 import 'favorite/favorite_view.dart';
 import 'home/home_view.dart';
 import 'post/post_view.dart';
+
+import 'products/products_view.dart';
 import 'root_controller.dart';
 import 'settings/settings_view.dart';
 
@@ -26,6 +28,7 @@ class RootPage extends StatelessWidget {
               index: controller.tabIndex,
               children: [
                 HomeView(),
+                ProductsView(),
                 PostView(),
                 FavoriteView(),
                 SettingsView(),
@@ -43,6 +46,10 @@ class RootPage extends StatelessWidget {
               _bottomNavigationBarItem(
                 icon: CupertinoIcons.home,
                 label: 'Home',
+              ),
+                        _bottomNavigationBarItem(
+                icon: CupertinoIcons.book,
+                label: 'Products',
               ),
               _bottomNavigationBarItem(
                 icon: CupertinoIcons.book,

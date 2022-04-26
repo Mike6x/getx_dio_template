@@ -17,7 +17,7 @@ class AppRoutes {
   static const FAVORITE = '/favorite';
   static const POST = '/post';
   static const OTHER = '/other';
-  static const PROJECT_DETAILS = '/project-details';
+  static const PRODUCT_DETAILS = '/product-details';
 }
 
 

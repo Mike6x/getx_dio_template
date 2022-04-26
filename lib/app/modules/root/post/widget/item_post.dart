@@ -7,8 +7,6 @@ import '../post_index.dart';
 import '/app/core/base/base_widget_mixin.dart';
 import '/app/core/values/app_values.dart';
 import '/app/core/values/text_styles.dart';
-import '/app/core/widgets/elevated_container.dart';
-import '/app/routes/app_pages.dart';
 
 class ItemPost extends StatelessWidget with BaseWidgetMixin {
   final PostUiData dataModel;
@@ -94,6 +92,6 @@ class ItemPost extends StatelessWidget with BaseWidgetMixin {
   // }
 
   void _onTap() {
-    Get.toNamed(AppRoutes.PROJECT_DETAILS, arguments: dataModel);
+    Get.toNamed(AppRoutes.PRODUCT_DETAILS, arguments: dataModel);
   }
 }
