@@ -6,10 +6,11 @@ import '/app/my_app.dart';
 import '/flavors/build_config.dart';
 import '/flavors/env_config.dart';
 import '/flavors/environment.dart';
+import 'global.dart';
 
 
 
-void main() {
+Future<void> main()  async {
   EnvConfig devConfig = EnvConfig(
     appName: "Flutter GetX Template Dev",
     baseUrl: "https://reqres.in",
@@ -21,11 +22,11 @@ void main() {
     envType: Environment.DEVELOPMENT,
     envConfig: devConfig,
   );
-
+  await Global.init();
   //runApp(const MyApp());
 
   runApp(DevicePreview(
     enabled: !kReleaseMode,
-    builder: (context) => const MyApp(), // Wrap your app
+    builder: (context) => MyApp(), // Wrap your app
   ));
 }

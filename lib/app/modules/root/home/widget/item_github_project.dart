@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import '../../../../routes/app_routes.dart';
 import '/app/core/base/base_widget_mixin.dart';
 import '/app/core/values/app_colors.dart';
 import '/app/core/values/app_values.dart';
@@ -9,7 +10,6 @@ import '/app/core/values/text_styles.dart';
 
 import '/app/core/widgets/widgets_index.dart';
 import '../github_project_ui_data.dart';
-import '/app/routes/app_pages.dart';
 
 class ItemGithubProject extends StatelessWidget with BaseWidgetMixin {
   final GithubProjectUiData dataModel;
@@ -95,6 +95,6 @@ class ItemGithubProject extends StatelessWidget with BaseWidgetMixin {
   }
 
   void _onTap() {
-    Get.toNamed(Routes.PROJECT_DETAILS, arguments: dataModel);
+    Get.toNamed(AppRoutes.PROJECT_DETAILS, arguments: dataModel);
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../routes/app_routes.dart';
 import '/app/core/widgets/widgets_index.dart';
 import 'package:get/get.dart';
 
@@ -93,6 +94,6 @@ class ItemPost extends StatelessWidget with BaseWidgetMixin {
   // }
 
   void _onTap() {
-    Get.toNamed(Routes.PROJECT_DETAILS, arguments: dataModel);
+    Get.toNamed(AppRoutes.PROJECT_DETAILS, arguments: dataModel);
   }
 }

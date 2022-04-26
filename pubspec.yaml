@@ -10,23 +10,35 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.4
-  get: ^4.6.1
-  flutter_svg: ^1.0.3
-  dio: ^4.0.6
 
-  encrypt: ^5.0.1
+  # STATE MANAGEMENT
+  get: ^4.6.1
+  
   shared_preferences: ^2.0.13
+
+  dio: ^4.0.6
+  logger: ^1.1.0
+  pretty_dio_logger: ^1.1.1
+  cached_network_image: ^3.2.0
+  
+  # Base
+  cupertino_icons: ^1.0.4
+  google_fonts: ^2.3.1
+  flutter_svg: ^1.0.3
+  encrypt: ^5.0.1
+
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
-  cached_network_image: ^3.2.0
+  
   animations: ^2.0.2
-  logger: ^1.1.0
-  pretty_dio_logger: ^1.1.1
+
   font_awesome_flutter: ^9.2.0
   fluttertoast: ^8.0.9
+
   device_preview: ^1.0.0
+  flutter_screenutil: ^5.4.0+1
+  email_validator: ^2.0.1
 #  floor: ^1.2.0
 
 dev_dependencies:

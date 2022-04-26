@@ -94,7 +94,7 @@ const appBarSubtitleStyle = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
     height: 1.25,
-    color: AppColors.colorWhite);
+    color: AppColors.white);
 
 const cardTitleStyle = TextStyle(
     fontSize: 20,
@@ -128,7 +128,7 @@ const settingsItemStyle = TextStyle(
 final cardTagStyle = titleStyle.copyWith(color: AppColors.textColorGreyDark);
 
 const titleStyleWhite = TextStyle(
-    fontSize: 18, fontWeight: FontWeight.w500, color: AppColors.colorWhite);
+    fontSize: 18, fontWeight: FontWeight.w500, color: AppColors.white);
 
 const inputFieldLabelStyle = TextStyle(
   fontSize: 18,
@@ -162,7 +162,7 @@ const pageTitleWhiteStyle = TextStyle(
     fontSize: 28,
     fontWeight: FontWeight.w600,
     height: 1.15,
-    color: AppColors.colorWhite);
+    color: AppColors.white);
 
 const extraBigTitleStyle = TextStyle(
   fontSize: 40,

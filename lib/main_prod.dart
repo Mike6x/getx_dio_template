@@ -4,8 +4,9 @@ import '/app/my_app.dart';
 import '/flavors/build_config.dart';
 import '/flavors/env_config.dart';
 import '/flavors/environment.dart';
+import 'global.dart';
 
-void main() {
+Future<void> main() async {
   EnvConfig prodConfig = EnvConfig(
     appName: "Flutter GetX Template Prod",
     baseUrl: "https://reqres.in",
@@ -17,6 +18,6 @@ void main() {
     envType: Environment.PRODUCTION,
     envConfig: prodConfig,
   );
-
-  runApp(const MyApp());
+  await Global.init();
+  runApp(MyApp());
 }

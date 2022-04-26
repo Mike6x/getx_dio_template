@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_getx_template/app/data/encryption/mcrypt_base_64.dart';
-import 'package:get/get.dart' ;
+import 'package:get/get.dart';
 
 import '../../../data/local/preference/preference_index.dart';
 import '../../../data/repository/auth/auth_repository.dart';
@@ -11,7 +11,8 @@ class AuthController extends GetxController {
 
   // ----------------- Locators -----------------
   //final sharedPrefHelper = Get.find<SharedPreferenceHelper>();
-  final authRepository = Get.find<AuthRepository>();
+  final AuthRepository authRepository =
+      Get.find(tag: (AuthRepository).toString());
   final PreferenceManager _preferenceManager =
       Get.find(tag: (PreferenceManager).toString());
 
@@ -74,8 +75,8 @@ class AuthController extends GetxController {
   }
 
   Future<void> checkLoginStatus() async {
-
-    final String? token = await _preferenceManager.getString(Preferences.authToken);
+    final String? token =
+        await _preferenceManager.getString(Preferences.authToken);
     if (token != null) {
       isLogged.value = true;
     }

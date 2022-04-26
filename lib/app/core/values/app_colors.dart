@@ -11,11 +11,22 @@ abstract class AppColors {
   static const MaterialColor colorPrimarySwatch = Colors.cyan;
   static const Color colorPrimary = Color(0xFF38686A);
   static const Color colorAccent = Color(0xFF38686A);
+  
+static const Color errorColor = Color(0xFFAB0B0B);
+
+  static const Color white = Color(0xFFFFFFFF);
+  static Color black = const Color(0xff000000);
+  
+    // static const Color colorDark = Color(0xFF323232);
+  //static const Color lightGreyColor = Color(0xFFC4C4C4);
+  static Color grey = const Color(0xff656565);
+  static Color darkGrey = const Color(0xff555555);
+  static Color lightGrey = const Color(0xffF5F5F5);
+
+  static Color lightBlue = const Color(0xff47C5FB);
+  static Color darkBlue = const Color(0xff00569E);
+
   static const Color colorLightGreen = Color(0xFF00EFA7);
-  static const Color colorWhite = Color(0xFFFFFFFF);
-  static const Color lightGreyColor = Color(0xFFC4C4C4);
-  static const Color errorColor = Color(0xFFAB0B0B);
-  static const Color colorDark = Color(0xFF323232);
 
   static const Color buttonBgColor = colorPrimary;
   static const Color disabledButtonBgColor = Color(0xFFBFBFC0);
@@ -23,6 +34,8 @@ abstract class AppColors {
 
   static const Color textColorPrimary = Color(0xFF323232);
   static const Color textColorSecondary = Color(0xFF9FA4B0);
+   static const Color textColorAccent = colorAccent;
+
   static const Color textColorTag = colorPrimary;
   static const Color textColorGreyLight = Color(0xFFABABAB);
   static const Color textColorGreyDark = Color(0xFF979797);
