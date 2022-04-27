@@ -7,8 +7,8 @@ import '../modules/infra/auth/reset_password/reset_password_page.dart';
 import '../modules/infra/auth/sign_in/index.dart';
 import '../modules/infra/auth/sign_up/sign_up_page.dart';
 
-import '../modules/infra/onboard/on_board_index.dart';
-
+import '../modules/infra/on_board/on_board_index.dart';
+import '../modules/infra/settings/settings_index.dart';
 import '../modules/root/favorite/favorite_binding.dart';
 import '../modules/root/favorite/favorite_view.dart';
 import '../modules/root/home/home_binding.dart';
@@ -17,8 +17,7 @@ import '../modules/root/product_details/product_details_index.dart';
 import '../modules/root/root_index.dart';
 import '../modules/root/other/other_binding.dart';
 import '../modules/root/other/other_view.dart';
-import '../modules/root/settings/settings_binding.dart';
-import '../modules/root/settings/settings_view.dart';
+
 import 'app_routes.dart';
 
 class AppPages {
@@ -28,7 +27,7 @@ class AppPages {
     GetPage(
       name: AppRoutes.ONBOARD,
       page: () => const OnBoardPage(),
-      binding: OnBoardBinding(),
+      binding: AuthBinding(),
     ),
     GetPage(
       name: AppRoutes.SIGN_IN,
@@ -51,15 +50,15 @@ class AppPages {
       binding: AuthBinding(),
     ),
     GetPage(
+      name: AppRoutes.SETTINGS,
+      page: () => SettingsView(),
+      binding: SettingsBinding(),
+    ),
+    GetPage(
       name: AppRoutes.ROOT,
       page: () => const RootPage(),
       binding: RootBinding(),
     ),
-    // GetPage(
-    //   name: AppRoutes.MAIN,
-    //   page: () => MainView(),
-    //   binding: MainBinding(),
-    // ),
     GetPage(
       name: AppRoutes.HOME,
       page: () => HomeView(),
@@ -74,11 +73,6 @@ class AppPages {
       name: AppRoutes.POST,
       page: () => PostView(),
       binding: PostBinding(),
-    ),
-    GetPage(
-      name: AppRoutes.SETTINGS,
-      page: () => SettingsView(),
-      binding: SettingsBinding(),
     ),
     GetPage(
       name: AppRoutes.OTHER,

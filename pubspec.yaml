@@ -55,25 +55,28 @@ dev_dependencies:
 flutter_icons:
   android: "ic_launcher"
   ios: true
-  image_path: "images/launcher_icon.png"
+  image_path: "assets/images/launcher_icon.png"
 
 flutter:
   generate: true
   uses-material-design: true
   assets:
-    - images/
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/svgs/
   fonts:
     - family: Roboto
       fonts:
-        - asset: fonts/Roboto-Thin.ttf
+        - asset: assets/fonts/Roboto-Thin.ttf
           weight: 200
-        - asset: fonts/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
           weight: 200
-        - asset: fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
           weight: 200
-        - asset: fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
           weight: 300
-        - asset: fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
           weight: 600
-        - asset: fonts/Roboto-Italic.ttf
+        - asset: assets/fonts/Roboto-Italic.ttf
           style: italic

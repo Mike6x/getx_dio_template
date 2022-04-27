@@ -10,6 +10,7 @@ import '../../../../core/values/strings.dart';
 
 import '../../../../core/widgets/widgets_index.dart';
 
+import '../../../../routes/app_routes.dart';
 import '../auth_controller.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
@@ -95,7 +96,8 @@ class ForgotPasswordPage extends StatelessWidget {
                           .bodyText1
                           ?.copyWith(color: AppColors.darkBlue),
                     ).onTap(() {
-                      Navigator.pushNamed(context, '/login');
+                      //Navigator.pushNamed(context, '/login');
+                      Get.toNamed(AppRoutes.SIGN_IN);
                     }),
                   ],
                 ),

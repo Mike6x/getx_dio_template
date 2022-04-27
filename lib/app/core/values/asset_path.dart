@@ -1,2 +1,2 @@
-const logo_image = "images/launcher_icon.png";
+const logo_image = "assests/images/launcher_icon.png";
 

@@ -48,7 +48,7 @@ class _signInPageState extends State<SignInPage> {
       //     .then((value) {
       //   Get.offAllNamed(Routes.HOME);
       // });
-      Get.offAllNamed(AppRoutes.HOME);
+      Get.offAllNamed(AppRoutes.ROOT);
     }
   }
 
@@ -105,7 +105,7 @@ class _signInPageState extends State<SignInPage> {
                           style: Theme.of(context).textTheme.bodyText2),
                     ],
                   ),
-                  SizedBox(height: 32.h),
+                  SizedBox(height: 20.h),
                   CustomPrimaryButton(
                     buttonColor: AppColors.darkBlue,
                     textValue: Strings.loginLabel,
@@ -114,7 +114,7 @@ class _signInPageState extends State<SignInPage> {
                       _signInRequested();
                     },
                   ),
-                  SizedBox(height: 24.h),
+                  SizedBox(height: 20.h),
                   Center(
                     child: Text(
                       'OR',
@@ -124,7 +124,7 @@ class _signInPageState extends State<SignInPage> {
                           ?.copyWith(color: AppColors.grey),
                     ),
                   ),
-                  SizedBox(height: 24.h),
+                  SizedBox(height: 20.h),
                   // Google Sign In
                   CustomPrimaryButton(
                     buttonColor: AppColors.lightGrey,
@@ -132,7 +132,7 @@ class _signInPageState extends State<SignInPage> {
                     textColor: AppColors.black,
                     onClick: () {},
                   ),
-                  SizedBox(height: 50.h),
+                  SizedBox(height: 30.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -150,14 +150,16 @@ class _signInPageState extends State<SignInPage> {
                             .bodyText1
                             ?.copyWith(color: AppColors.darkBlue),
                       ).onTap(() {
-                        Navigator.pushNamed(context, '/register');
+                        //Navigator.pushNamed(context, '/register');
+                        Get.toNamed(AppRoutes.SIGN_UP);
                       }),
                     ],
                   ),
                   SizedBox(height: 10.h),
                   InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, '/forgot-password');
+                      //Navigator.pushNamed(context, '/forgot-password');
+                      Get.toNamed(AppRoutes.FORGOT_PASSWORD);
                     },
                     child: Text(
                       Strings.forgotPassword,

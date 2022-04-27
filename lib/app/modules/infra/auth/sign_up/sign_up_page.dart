@@ -141,7 +141,8 @@ class _SignUpPageState extends State<SignUpPage> {
                               .bodyText1
                               ?.copyWith(color: AppColors.darkBlue),
                         ).onTap(() {
-                          Navigator.pushNamed(context, '/login');
+                          Get.toNamed(AppRoutes.SIGN_IN);
+                          //Navigator.pushNamed(context, '/login');
                         }),
                       ],
                     ),

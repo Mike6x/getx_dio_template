@@ -9,7 +9,6 @@ import 'post/post_view.dart';
 
 import 'products/products_view.dart';
 import 'root_controller.dart';
-import 'settings/settings_view.dart';
 
 class RootPage extends StatelessWidget {
   const RootPage({Key? key}) : super(key: key);
@@ -31,7 +30,6 @@ class RootPage extends StatelessWidget {
                 ProductsView(),
                 PostView(),
                 FavoriteView(),
-                SettingsView(),
                 OtherView(),
               ],
             ),
@@ -47,7 +45,7 @@ class RootPage extends StatelessWidget {
                 icon: CupertinoIcons.home,
                 label: 'Home',
               ),
-                        _bottomNavigationBarItem(
+              _bottomNavigationBarItem(
                 icon: CupertinoIcons.book,
                 label: 'Products',
               ),
@@ -59,10 +57,10 @@ class RootPage extends StatelessWidget {
                 icon: CupertinoIcons.bell,
                 label: 'Favorite',
               ),
-              _bottomNavigationBarItem(
-                icon: CupertinoIcons.person,
-                label: 'settings',
-              ),
+              // _bottomNavigationBarItem(
+              //   icon: CupertinoIcons.person,
+              //   label: 'settings',
+              // ),
               _bottomNavigationBarItem(
                 icon: Icons.menu,
                 label: 'Other',

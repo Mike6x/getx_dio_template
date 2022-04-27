@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '/app/modules/root/settings/widgets/item_settings_widgets.dart';
+import 'package:get/get.dart';
+import '../../../routes/app_routes.dart';
+import '/app/modules/infra/settings/widgets/item_settings_widgets.dart';
 import '/app/core/base/base_view.dart';
 import '/app/core/widgets/custom_app_bar.dart';
 import 'settings_controller.dart';
@@ -9,7 +11,15 @@ class SettingsView extends BaseView<SettingsController> {
   PreferredSizeWidget? appBar(BuildContext context) {
     return CustomAppBar(
       appBarTitleText: "Settings",
-      isBackButtonEnabled: false,
+      //isBackButtonEnabled: false,
+      actions: [
+        IconButton(
+            onPressed: () {
+              Get.offAllNamed(AppRoutes.SIGN_IN);
+              //UserStore.to.onLogout();
+            },
+            icon: const Icon(Icons.logout_rounded))
+      ],
     );
   }
 

@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 class AppRoutes {
-  static const INITIAL = '/';
+  static const INITIAL = '/onboard';
 
   static const ONBOARD = '/onboard';
   static const SIGN_IN = '/signin';
@@ -12,7 +12,6 @@ class AppRoutes {
 
   static const ROOT = '/';
 
-  static const MAIN = '/main';
   static const HOME = '/home';
   static const FAVORITE = '/favorite';
   static const POST = '/post';

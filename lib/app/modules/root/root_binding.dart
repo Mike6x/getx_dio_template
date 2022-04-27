@@ -7,7 +7,7 @@ import 'other/other_controller.dart';
 import 'post/post_index.dart';
 import 'products/products_controller.dart';
 import 'root_controller.dart';
-import 'settings/settings_controller.dart';
+
 
 class RootBinding extends Bindings {
   @override
@@ -17,7 +17,7 @@ class RootBinding extends Bindings {
     Get.lazyPut<ProductsController>(() => ProductsController(), fenix: true);
     Get.lazyPut<PostController>(() => PostController());
     Get.lazyPut<FavoriteController>(() => FavoriteController());
-    Get.lazyPut<SettingsController>(() => SettingsController());
+    // Get.lazyPut<SettingsController>(() => SettingsController());
     Get.lazyPut<OtherController>(() => OtherController(), fenix: true);
   }
 }
